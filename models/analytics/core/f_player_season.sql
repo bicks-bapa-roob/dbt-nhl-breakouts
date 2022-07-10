@@ -54,7 +54,7 @@ player_season as (
         , sum(bp.goals) desc
 )
 
--- at the player-season level, get the number of missed shots and blocked shots by each shooter
+-- At the player-season level, get the number of missed shots and blocked shots by each shooter
 , player_stats as (
     select
         plays.player_id
